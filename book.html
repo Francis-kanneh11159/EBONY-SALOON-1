@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an Appointment | Ebony Rose Salon</title>
+  <meta name="description" content="Book your salon appointment on WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌹%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#2a1233">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ebony Rose Salon">
+  <meta property="og:description" content="Braids, weaves, natural hair care, nails and makeup. Book on WhatsApp.">
+  <!-- After you upload the site, change this to the full web address of the image, e.g. https://yoursite.com/images/knotless-braids.jpg -->
+  <meta property="og:image" content="images/knotless-braids.jpg">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="index.html">Ebony Rose</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-small" href="book.html">Book now</a>
+  </nav>
+</header>
+<main>
+  <section class="page-hero"><h1>Book your appointment</h1><p>Fill this in and it opens WhatsApp with your request ready to send.</p></section>
+  <section class="section">
+    <form class="book-form" id="bookForm" novalidate>
+      <label>Your name
+        <input type="text" id="name" required placeholder="e.g. Hawa Kollie">
+        <span class="error" id="nameError"></span>
+      </label>
+      <label>Phone number
+        <input type="tel" id="phone" required placeholder="e.g. 0770 000 000">
+        <span class="error" id="phoneError"></span>
+      </label>
+      <label>Service
+        <select id="serviceSelect" required></select>
+      </label>
+      <label>Preferred date
+        <input type="date" id="date" required>
+        <span class="error" id="dateError"></span>
+      </label>
+      <label>Preferred time
+        <select id="time" required></select>
+      </label>
+      <label class="full">Extra notes (optional)
+        <textarea id="notes" rows="3" placeholder="Hair length, style picture, anything we should know"></textarea>
+      </label>
+      <button class="btn full" type="submit">Send request on WhatsApp</button>
+    </form>
+  </section>
+</main>
+<footer>
+  <p>&copy; <span id="year"></span> Ebony Rose Salon. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
